@@ -6,20 +6,28 @@
       "dom.iterable",
       "esnext"
     ],
+    // 表示js jsx也会被包含进来
     "allowJs": true,
+    // 不忽略所有的声明文件（ *.d.ts）的类型检查。
     "skipLibCheck": true,
     "esModuleInterop": true,
+    // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
     "allowSyntheticDefaultImports": true,
+    // 相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict， --strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization。
     "strict": true,
+    // 禁止对同一个文件的不一致的引用
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    // 将每个文件作为单独的模块
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve"
+    // "noEmit": true,
+    "jsx": "react"
   },
   "include": [
     "src"
-  ]
+  ],
+  // "exclude"默认情况下会排除node_modules，bower_components，jspm_packages和<outDir>目录
+  
 }
